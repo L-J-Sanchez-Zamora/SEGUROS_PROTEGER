@@ -1,8 +1,8 @@
-body{
-    background-image:url(imagenes/fondo_ondas_blancas.jpg)  ;
+body {
+    background-image: url(imagenes/fondo_ondas_blancas.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
-    margin:2.5rem;
+    margin: 2.5rem;
 }
 
 .normal {
@@ -21,6 +21,7 @@ h2 {
     font-size: 28px;
     color: rgb(53, 17, 77);
 }
+
 h2:hover {
     font-family: 'PT Sans', sans-serif;
     color: rgb(221, 9, 240);
@@ -32,23 +33,26 @@ h1 {
 }
 
 .institucion {
-    color:hsl(313, 100%, 50%);
-
+    color: #023E8A;
 }
-a[href*="page2.html"]
-{
-    color:hsl(244, 93%, 52%);
 
+a {
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+}
+
+
+a[href*="page2.html"] {
+    color: hsl(244, 93%, 52%);
 }
 
 #leidyid {
-    color:hsl(308, 59%, 46%);
-
+    color: hsl(308, 59%, 46%);
 }
 
 title {
-    color:hsla(313, 88%, 19%, 0.712);
-
+    color: hsla(313, 88%, 19%, 0.712);
 }
 
 button {
@@ -71,15 +75,108 @@ button {
     transform: translate(0px, 0px) rotate(0deg);
     transition: 0.2s;
     box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
-    margin: 2em;
-   }
-   
-   button:hover {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
     color: #516d91;
     background-color: #E5EDF5;
     box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
-   }
-   
-   button:active {
+}
+
+button:active {
     box-shadow: none;
-   }
+}
+
+.input-with-image {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    /* Espacio para la imagen */
+    background-image: url('../imagenes/lupa.png');
+    background-size: 16px 16px;
+    /* Tamaño de la imagen */
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    /* Posición de la imagen */
+    border-radius: 18px;
+    height: 30px;
+}
+
+.p {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+}
+
+.clicAqui {
+    text-decoration-color: hsla(313, 88%, 19%, 0.712);
+    font-weight: bold;
+}
+
+
+.blockButton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
+    gap: 50px; /* Espacio entre las columnas */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+@media (max-width: 1300px) {
+    .blockButton {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 900px) {
+    .blockButton {
+        margin-left: 8%;
+    }
+}
+a.spaceColumn {
+    padding: 0; /* Ajusta el valor según tus preferencias */
+}
+.navBar{
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap: 50px;
+    align-items: center;
+    
+}
+.navBar a {
+    text-align: center; /* Centra el texto horizontalmente en las columnas */
+    /* Otros estilos de texto si es necesario */
+}
+.navBar > :nth-child(1) {
+    grid-column: span 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.blockFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas iguales */
+    gap: 150px; /* Espacio entre las columnas */
+}
+
+.blockFooter div {
+    text-align: center;
+}
+
+.titleFooter{
+    font-weight: bold;
+}
+hr{
+    border-color: #2fdada;
+}
+.introFooter {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}

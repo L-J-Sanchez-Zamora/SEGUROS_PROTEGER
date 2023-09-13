@@ -1,10 +1,3 @@
-body{
-    background-image:url(imagenes/fondo_ondas_blancas.jpg)  ;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    margin:2.5rem;
-}
-
 .normal {
     font-family: 'PT Sans', sans-serif;
     font-size: 24px;
@@ -13,17 +6,14 @@ body{
 .destacado {
     font-family: Bahnschrift SemiCondensed;
     font-size: 30px;
-    color: rgb(96, 228, 44);
 }
 
 h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 28px;
-    color: rgb(53, 17, 77);
 }
 h2:hover {
     font-family: 'PT Sans', sans-serif;
-    color: rgb(221, 9, 240);
 }
 
 h1 {
@@ -31,58 +21,13 @@ h1 {
     font-size: 36px;
 }
 
-.institucion {
-    color:hsl(313, 100%, 50%);
-
+p {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
 }
-a[href*="page2.html"]
-{
-    color:hsl(244, 93%, 52%);
-
+.bodyHogar{
+margin: 4rem;
 }
-
-#leidyid {
-    color:hsl(308, 59%, 46%);
-
-}
-
-title {
-    color:hsla(313, 88%, 19%, 0.712);
-
-}
-
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    color: #7e97b8;
-    background-color: #e0e8ef;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: rgba(255, 255, 255, 0.333);
-    border-radius: 40px 40px 40px 40px;
-    padding: 16px 24px 16px 28px;
-    transform: translate(0px, 0px) rotate(0deg);
-    transition: 0.2s;
-    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
-    margin: 2em;
-   }
-   
-   button:hover {
-    color: #516d91;
-    background-color: #E5EDF5;
-    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
-   }
-   
-   button:active {
-    box-shadow: none;
-   }
 
 .navBar{
     display: grid;

@@ -1,8 +1,13 @@
-body{
-    background-image:url(imagenes/fondo_ondas_blancas.jpg)  ;
+body {
+    background-image: url(imagenes/fondo_ondas_blancas.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
-    margin:2.5rem;
+    margin: 4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .normal {
@@ -21,6 +26,7 @@ h2 {
     font-size: 28px;
     color: rgb(53, 17, 77);
 }
+
 h2:hover {
     font-family: 'PT Sans', sans-serif;
     color: rgb(221, 9, 240);
@@ -32,22 +38,28 @@ h1 {
 }
 
 .institucion {
-    color:hsl(313, 100%, 50%);
+    color: hsl(313, 100%, 50%);
 
 }
-a[href*="page2.html"]
-{
-    color:hsl(244, 93%, 52%);
+
+a {
+    text-decoration: none;
+}
+
+
+a[href*="page2.html"] {
+    color: hsl(244, 93%, 52%);
 
 }
 
 #leidyid {
-    color:hsl(308, 59%, 46%);
+    color: hsl(308, 59%, 46%);
 
 }
 
 title {
-    color:hsla(313, 88%, 19%, 0.712);
+    color: hsla(313, 88%, 19%, 0.712);
+
 
 }
 
@@ -72,17 +84,28 @@ button {
     transition: 0.2s;
     box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
     margin: 2em;
-   }
-   
-   button:hover {
+    cursor: pointer;
+}
+
+button:hover {
     color: #516d91;
     background-color: #E5EDF5;
     box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
-   }
-   
-   button:active {
+}
+
+button:active {
     box-shadow: none;
-   }
+}
+
+p {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+}
+
+.clicAqui {
+
+    text-decoration-color: hsla(313, 88%, 19%, 0.712);
+}
 
 .navBar{
     display: grid;
@@ -122,6 +145,7 @@ a {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
 }
+
 
 
 .blockFooter {
