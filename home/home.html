@@ -3,10 +3,7 @@
 <head>
     <link rel="icon" href="../imagenes/seguros_proteger.png" type="image/png">
     <title>Seguros Proteger</title>
-    <style>
-    </style>
     <link rel="stylesheet" href="home.module.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
@@ -25,25 +22,34 @@
                 hspace="20">Seguros Proteger</h1><br>
 
 
-        <input type="text" placeholder="Buscar" class="input-with-image" />
+        <input type="text" placeholder=" Buscar" class="input-with-image" />
 
         <a href="../home/home.html">Inicio</a>
 
         <a href="../nuestraOrganizacion/nuestraOrganizacion.html">Nuestra Empresa</a>
-
     </div>
 
 </head>
 
 <body>
-    <center>
-        <br>
-        <br>
+    <div>
+        <div class="carrousel">
+            <div class="grande">
+                <img src="../imagenes/familia.jpg" alt="Foto1" class="img">
+                <img src="../imagenes/casa.jpg" alt="Foto2" class="img">
+            </div>
+
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+
+
         <h1 id="leidyid">
-            <h1>Cuidamos tu bienestar</h1>
+            Cuidamos tu bienestar
         </h1><br>
-        <img src="../imagenes/familia.jpg" width="40%" alt="Foto Leidy Johanna Sánchez Zamora" style="display:flex;
-        justify-content:center">
+
         <h2>Nuestros servicios</h2>
 
         <div class="blockButton">
@@ -160,9 +166,9 @@
             </a>
         </div>
 
-        <div>
+        <div class="center">
             <h2>¿Quienes somos?</h2>
-            <p class="normal">La empresa de Seguros Proteger fue fundada en 1980, comenzó como una modesta
+            <div class="normal">La empresa de Seguros Proteger fue fundada en 1980, comenzó como una modesta
                 firma de seguros de vida en Bogotá. Con el tiempo, expandió sus operaciones a nivel nacional,
                 diversificando su cartera de productos para incluir seguros de automóviles, hogares y mascotas. A medida
                 que la empresa creció, se centró en brindar un servicio excepcional y soluciones de protección
@@ -172,12 +178,11 @@
                 protección del patrimonio de las familias y empresas colombianas.<br><span class="institucion">Nos
                     complace el que puedas contar con nosotros por mas 40 años</span>.<br>
 
-            <div>
+
                 <br>
                 <h2> Nuestro equipo de trabajo</h2><br>
                 <img src="../imagenes/familia_aseguradora.jpg" width="60%"
-                    alt="Foto Leidy Johanna Sánchez Zamora y su familia" style="display:flex;
-                    justify-content:center">
+                    alt="Foto Leidy Johanna Sánchez Zamora y su familia" class="centrado">
                 <br><br>
                 <p class="normal">
                     Nuestro equipo profesional, conformado por más de 500 empleados altamente capacitados y
@@ -191,9 +196,7 @@
                 </p>
                 </p>
                 <br><br>
-                <img src="../imagenes/hogar.png" width="40%" height="20%"
-                    alt="Foto Leidy Johanna Sánchez Zamora trabajando" style="display:flex;
-                    justify-content:center">
+                <img src="../imagenes/hogar.png" width="40%" height="20%" alt="Foto hogar" class="centrado">
                 <br>
                 <h2>Acontecimientos importantes</h2><br>
                 <p class="normal">
@@ -207,9 +210,7 @@
                     la innovación en beneficio de nuestros clientes. </p>
 
                 <h2>Nuestra presencia</h2><br>
-                <img src="../imagenes/mascotas.jpg" width="40%" height="25%"
-                    alt="Foto Leidy Johanna Sánchez Zamora y Jennifer Alejandra Gamba Cantor" style="display:flex;
-                    justify-content:center">
+                <img src="../imagenes/mascotas.jpg" width="40%" height="25%" alt="Foto mascota" class="centrado">
                 <br> <br>
                 <p class="normal">Nuestros proveedores de asistencias son la columna vertebral de nuestro compromiso
                     con la excelencia en todo el país. Con una presencia sólida y estratégica en todo el territorio
@@ -219,12 +220,70 @@
                     esenciales. Su dedicación y profesionalismo son fundamentales para nuestra capacidad de atender
                     a nuestros clientes en cualquier lugar y en cualquier momento, asegurando que siempre estén en
                     buenas manos, sin importar dónde se encuentren en nuestro hermoso país.</p><br>
-                <br><br>
-                <img src="../imagenes/ideal.jpg" width="40%" height="25%"
-                    alt="ideal" style="display:flex;
-                    justify-content:center">
+                <br>
+                <img src="../imagenes/ideal.jpg" alt="Foto ideal" class="centrado" width="40%" height="25%">
 
+
+                <br><br>
+
+                <div class="formulario">
+                    <form>
+                        <h1>Contactanos</h1>
+                        <label for="name">Nombres: </label><input type="text" class="inputForm"></input><br><br>
+                        <label for="lastName">Apellidos: </label><input type="text" class="inputForm"></input><br><br>
+                        <label for="phoneNumber"> Nùmero celular: </label><input type="text"class="inputForm"></input><br><br>
+                        <label for="city"> Ciudad: </label>
+                        <select name="city" id="city" class="inputForm">
+                            <option value="">Seleciona una opción</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Bucaramanga">Bucaramanga</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Cúcuta">Cúcuta</option>
+                            <option value="Florencia">Florencia</option>
+                            <option value="Ibagué">Ibagué</option>
+                            <option value="Inírida">Inírida</option>
+                            <option value="Leticia">Leticia</option>
+                            <option value="Manizales">Manizales</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Mitú">Mitú</option>
+                            <option value="Mocoa">Mocoa</option>
+                            <option value="Montería">Montería</option>
+                            <option value="Neiva">Neiva</option>
+                            <option value="Pasto">Pasto</option>
+                            <option value="Pereira">Pereira</option>
+                            <option value="Popayán">Popayán</option>
+                            <option value="Puerto Carreño">Puerto Carreño</option>
+                            <option value="Quibdó">Quibdó</option>
+                            <option value="Riohacha">Riohacha</option>
+                            <option value="San Andrés">San Andrés</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                            <option value="San José del Guaviare">San José del Guaviare</option>
+                            <option value="Sincelejo">Sincelejo</option>
+                            <option value="Tunja">Tunja</option>
+                            <option value="Valledupar">Valledupar</option>
+                            <option value="Villavicencio">Villavicencio</option>
+                            <option value="Yopal">Yopal</option>
+                        </select><br><br>
+                        <label for="opinion">Comentanos tu opinión acerca de nuestros servicios: </label><br><br>
+                        <textarea></textarea><br><br>
+                        <label>Seleccione el servicio que más llamo su atención:</label><br>
+                        <label for="option1">Seguro Hogar</label>
+                        <input type="radio" name="role" value="Hogar" id="option1"><br>
+                        <label for="option2">Seguro Vehiculos</label>
+                        <input type="radio" name="role" value="Vehiculos" id="option2"><br>
+                        <label for="option3">Seguro Mascotas</label>
+                        <input type="radio" name="role" value="Mascotas" id="option3"><br>
+                        <label for="option4">Asistencias</label>
+                        <input type="radio" name="role" value="Asistencias" id="option4"><br>
+                        <button class="buttonForm">Enviar</button>
+                    </form>
+                </div>
                 <br><br><br>
+
                 <hr><br>
 
                 <p class="introFooter">Bienvenido a Seguros Proteger</p><br>
@@ -241,18 +300,17 @@
                                 <a href="../aliados/aliados.html">Nuestros aliados<a><br>
                                         <a>Contactanos</a><br><br>
                     </div>
-
                     <div>
                         <a class="titleFooter">Legal</a><br>
                         <a>Preguntas Frecuentes</a><br>
                         <a>Terminos de uso</a><br>
                         <a>Politica de privacidad</a><br><br>
                     </div>
-
                 </div>
-
                 <p class="introFooter">©Seguros Proteger 2023</p>
-    </center>
+            </div>
+        </div>
+        <script src="./app.js"></script>
 </body>
 
 </html>

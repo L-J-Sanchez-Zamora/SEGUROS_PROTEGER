@@ -1,8 +1,19 @@
 body {
-    background-image: url(../imagenes/fondo_ondas_blancas.jpg);
+    background: linear-gradient(to right, #bdc9d4 0%, #e0e8ef 1%, rgb(248, 248, 248) 4%, rgb(248, 248, 248) 96%, #e0e8ef 99%, #c3cbd3 100%);
+    background-color: rgb(128, 128, 160);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 2.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+.blockUnoHome {
+    background-color: #0077b6;
 }
 
 .normal {
@@ -41,7 +52,6 @@ a {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
 }
-
 
 a[href*="page2.html"] {
     color: hsl(244, 93%, 52%);
@@ -104,51 +114,117 @@ button:active {
     /* Posición de la imagen */
     border-radius: 18px;
     height: 30px;
+    
+}
+.inputForm {
+    width: 300px;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    border-radius: 18px;
+    height: 30px;
+}
+.inputForm:focus {
+    border-color: #7e97b8;
+    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
+    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
+}
+select{
+    font-size: 16px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer; 
+}
+select:focus {
+    border-color: #7e97b8;
+    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
+    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
+}
+select option {
+    padding: 10px;
+    font-size: 16px;
+}
+textarea{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 16px;
+    width: 50%;
+    height: 100px;
+    border-radius: 15px;
+    padding: 8px;
+}
+textarea:focus {
+    border-color: #7e97b8;
+    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
+    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
 }
 
+label{
+    font-size: 20px;
+    align-items: initial;
+
+}
+.alinear{
+}
+.buttonForm{
+display: flex;
+margin: 0 auto;
+width: 150px;
+margin-top: 1rem;
+}
 .p {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
 }
-
 .clicAqui {
     text-decoration-color: hsla(313, 88%, 19%, 0.712);
     font-weight: bold;
 }
 
-
 .blockButton {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
-    gap: 50px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(4, 1fr);
+    /* Divide en 4 columnas iguales */
+    gap: 50px;
+    /* Espacio entre las columnas */
     margin-left: 20%;
     margin-right: 20%;
 }
+
 @media (max-width: 1300px) {
     .blockButton {
         margin-left: 10%;
     }
 }
+
 @media (max-width: 900px) {
     .blockButton {
         margin-left: 8%;
     }
 }
+
 a.spaceColumn {
-    padding: 0; /* Ajusta el valor según tus preferencias */
+    padding: 0;
+    /* Ajusta el valor según tus preferencias */
 }
-.navBar{
+
+.navBar {
     display: grid;
-    grid-template-columns:repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 50px;
     align-items: center;
-    
+
 }
+
 .navBar a {
-    text-align: center; /* Centra el texto horizontalmente en las columnas */
+    text-align: center;
+    /* Centra el texto horizontalmente en las columnas */
     /* Otros estilos de texto si es necesario */
 }
-.navBar > :nth-child(1) {
+
+.navBar> :nth-child(1) {
     grid-column: span 2;
 }
 
@@ -157,26 +233,87 @@ a.spaceColumn {
     align-items: center;
 }
 
-
-
 .blockFooter {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas iguales */
-    gap: 150px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(3, 1fr);
+    /* Divide en 3 columnas iguales */
+    gap: 150px;
+    /* Espacio entre las columnas */
 }
 
 .blockFooter div {
     text-align: center;
 }
 
-.titleFooter{
+.titleFooter {
     font-weight: bold;
 }
-hr{
+
+hr {
     border-color: #2fdada;
 }
+
 .introFooter {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
     font-weight: bold;
+}
+.centrado{
+    display: flex;
+    margin: 0 auto;
+}
+
+/*++++++++++ Estilos para el carrusel+++++++++++++++*/
+.carrousel {
+    width: 90%;
+    padding: 10em;
+}
+
+.carrousel .grande {
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    transition: all .5s ease;
+    transform: translateX(-50%);
+}
+
+.carrousel .img {
+    width: calc(100% / 2 - 2em);
+    min-height: 20vh;
+}
+
+.carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+}
+
+.carrousel .punto.activo {
+    background-color: red;
+}
+.center{
+    text-align: center;
+    
+}
+.formulario{
+ border: 2px solid #ccc;
+ border-radius: 35px;
+ padding: 2rem;
+ margin-left: 20%;
+ margin-right: 20%;
 }
