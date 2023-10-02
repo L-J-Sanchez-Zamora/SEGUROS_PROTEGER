@@ -17,7 +17,7 @@ body {
 }
 
 .normal {
-    font-family: 'PT Sans', sans-serif;
+    font-family:'Hind Vadodara', sans-serif;;
     font-size: 24px;
 }
 
@@ -35,7 +35,7 @@ h2 {
 
 h2:hover {
     font-family: 'PT Sans', sans-serif;
-    color: rgb(221, 9, 240);
+    color: rgb(90, 30, 129);
 }
 
 h1 {
@@ -58,7 +58,7 @@ a[href*="page2.html"] {
 }
 
 #leidyid {
-    color: hsl(308, 59%, 46%);
+    color: rgb(90, 30, 129);
 }
 
 title {
@@ -139,6 +139,7 @@ select {
     background-color: white;
     cursor: pointer;
     padding: 6px;
+    
 }
 
 select option {
@@ -256,37 +257,42 @@ hr {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    
 }
 .centrado{
     display: flex;
     margin: 0 auto;
 }
 
-/*++++++++++ Estilos para el carrusel+++++++++++++++*/
+/*++++++++++ Estilos para el carrusel +++++++++++++++*/
 .carrousel {
     width: 90%;
-    padding: 10em;
+    max-width: 120em;
+    padding: 2em;
+    margin:0 auto
 }
 
 .carrousel .grande {
-    width: 200%;
-
+    width: 300%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-
     transition: all .5s ease;
-    transform: translateX(-50%);
+    transform: translateX(0%);
+    background-color: #e0e8ef;
+    border-radius: 12px;
 }
 
 .carrousel .img {
-    width: calc(100% / 2 - 2em);
-    min-height: 20vh;
+    width: calc(100% / 3 - 2em);
+    height: 80vh;
+    border-radius: 12px;
 }
 
 .carrousel .puntos {
+    
     width: 100%;
     margin: 1em 0 0;
     padding: .4em;
@@ -300,14 +306,23 @@ hr {
     width: 2em;
     height: 2em;
     margin: 1em 1em 0;
+    box-shadow: black 2 0;
+    border-radius: 35px;
 }
 
-.carrousel .punto.activo {
-    background-color: red;
+
+
+.punto.activo::marker {
+    color: #6982a3;
+    width: 2em;
+    height: 2em;
 }
+.li{
+    size: 50px;
+}
+/*_________________________________________*/
 .center{
     text-align: center;
-    
 }
 .formulario{
 display: block;
@@ -317,4 +332,12 @@ justify-content: space-between;
  padding: 2rem;
  margin-left: 20%;
  margin-right: 20%;
+ box-shadow:
+ 1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
+ 4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
+ 8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
+ 14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
+ 27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
+ 66px 65px 80px rgba(0, 0, 0, 0.11)
+;
 }

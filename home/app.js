@@ -3,7 +3,7 @@
 'use strick'
 
 const grande = document.querySelector('.grande');
-const carrousel = document.querySelectorAll('.punto');
+const punto = document.querySelectorAll('.punto');
 
 //Cunado hago click en cada punto
 //saber la posicion de cada punto 
@@ -14,7 +14,7 @@ const carrousel = document.querySelectorAll('.punto');
 punto.forEach((cadaPunto, i) => {
     punto[i].addEventListener('click', () => {
         let posicion = i
-        let operacion = posicion * -50
+        let operacion = posicion * -33
 
         grande.style.transform =`translateX(${operacion}%)`
 
