@@ -101,73 +101,72 @@ button:active {
     box-shadow: none;
 }
 
+.input-with-image,
+.inputForm,
+select,
+textarea {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 16px;
+    border-radius: 18px;
+    width: 50%; /* Ajusta el ancho al 100% */
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    padding-left: 26px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
 .input-with-image {
-    font-family: 'Hind Vadodara', sans-serif;
-    font-size: 16px;
-    padding-left: 20px;
-    /* Espacio para la imagen */
     background-image: url('../imagenes/lupa.png');
-    background-size: 16px 16px;
-    /* Tamaño de la imagen */
-    background-repeat: no-repeat;
-    background-position: 4px center;
-    /* Posición de la imagen */
-    border-radius: 18px;
-    height: 30px;
-    
-}
-.inputForm {
-    width: 300px;
-    font-family: 'Hind Vadodara', sans-serif;
-    font-size: 16px;
-    padding-left: 20px;
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position: 4px center;
-    border-radius: 18px;
-    height: 30px;
-}
-.inputForm:focus {
-    border-color: #7e97b8;
-    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
-    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
-}
-select{
-    font-size: 16px;
     width: 200px;
-    background-color: white;
-    cursor: pointer; 
+    padding-left: 26px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
-select:focus {
+.input-with-image:focus,
+.inputForm:focus,
+select:focus,
+textarea:focus {
     border-color: #7e97b8;
-    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
-    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
+    outline: none;
+    box-shadow: 0 0 5px #7e97b8;
 }
+
+select {
+    width: 30%; /* Ajusta el ancho al 100% */
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    padding: 6px;
+}
+
 select option {
     padding: 10px;
     font-size: 16px;
 }
-textarea{
+
+textarea {
+    width: 70%; /* Ajusta el ancho al 100% */
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 16px;
-    width: 50%;
     height: 100px;
     border-radius: 15px;
-    padding: 8px;
-}
-textarea:focus {
-    border-color: #7e97b8;
-    outline: none; /* Elimina el contorno predeterminado en algunos navegadores */
-    box-shadow: 0 0 5px #7e97b8; /* Agrega un efecto de sombra */
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-label{
+label {
     font-size: 20px;
-    align-items: initial;
+    letter-spacing: 1px;
+}
 
+.izq {
+    text-align: left;
+    text-justify: initial;
 }
-.alinear{
-}
+
 .buttonForm{
 display: flex;
 margin: 0 auto;
@@ -311,6 +310,8 @@ hr {
     
 }
 .formulario{
+display: block;
+justify-content: space-between;
  border: 2px solid #ccc;
  border-radius: 35px;
  padding: 2rem;
