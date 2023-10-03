@@ -12,7 +12,6 @@ body {
     text-align: center;
 }
 
-
 .blockUnoHome {
     background-color: #0077b6;
 }
@@ -126,6 +125,7 @@ textarea {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
 .input-with-image:focus,
 .inputForm:focus,
 select:focus,
@@ -140,8 +140,8 @@ select {
     font-size: 16px;
     background-color: white;
     cursor: pointer;
-    padding: 6px;
-    
+    padding-right: 26px;
+    margin-right: 8px;
 }
 
 select option {
@@ -188,9 +188,7 @@ margin-top: 1rem;
 .blockButton {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Divide en 4 columnas iguales */
     gap: 50px;
-    /* Espacio entre las columnas */
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -209,7 +207,6 @@ margin-top: 1rem;
 
 a.spaceColumn {
     padding: 0;
-    /* Ajusta el valor según tus preferencias */
 }
 
 .navBar {
@@ -217,13 +214,10 @@ a.spaceColumn {
     grid-template-columns: repeat(6, 1fr);
     gap: 50px;
     align-items: center;
-
 }
 
 .navBar a {
     text-align: center;
-    /* Centra el texto horizontalmente en las columnas */
-    /* Otros estilos de texto si es necesario */
 }
 
 .navBar> :nth-child(1) {
@@ -240,9 +234,7 @@ a.spaceColumn {
 .blockFooter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Divide en 3 columnas iguales */
     gap: 150px;
-    /* Espacio entre las columnas */
 }
 
 .blockFooter div {
@@ -290,27 +282,12 @@ hr {
     transform: translateX(0%);
     background-color: #e0e8ef;
     border-radius: 12px;
-    box-shadow:
-    1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
-    4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
-    8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
-    14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
-    27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
-    66px 65px 80px rgba(0, 0, 0, 0.11)
-   ;
 }
 
 .carrousel .img {
     width: calc(100% / 3 - 2em);
     height: 80vh;
     border-radius: 12px;
-    box-shadow:     1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
-    4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
-    8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
-    14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
-    27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
-    66px 65px 80px rgba(0, 0, 0, 0.11)
-   ;
 }
 
 .carrousel .puntos {
@@ -354,12 +331,20 @@ justify-content: space-between;
  padding: 2rem;
  margin-left: 20%;
  margin-right: 20%;
- box-shadow:
- 1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
- 4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
- 8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
- 14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
- 27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
- 66px 65px 80px rgba(0, 0, 0, 0.11)
-;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+.centrado,
+.carrousel .img, 
+.carrousel .grande, 
+.formulario {
+    box-shadow:
+    1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
+    4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
+    8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
+    14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
+    27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
+    66px 65px 80px rgba(0, 0, 0, 0.11);
 }
