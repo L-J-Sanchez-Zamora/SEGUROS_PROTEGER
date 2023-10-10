@@ -267,7 +267,7 @@ hr {
 .carrousel {
     width: 90%;
     max-width: 120em;
-    padding: 2em;
+    padding:0;
     margin:0 auto
 }
 
@@ -277,17 +277,20 @@ hr {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding-top: 0;
     transition: all .5s ease;
     transform: translateX(0%);
-    background-color: #e0e8ef;
+    background-color: transparent;
     border-radius: 12px;
 }
 
 .carrousel .img {
     width: calc(100% / 3 - 2em);
-    height: 80vh;
+    height: 70vh;
     border-radius: 12px;
+    padding-top: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .carrousel .puntos {
@@ -308,8 +311,6 @@ hr {
     box-shadow: black 2 0;
     border-radius: 35px;
 }
-
-
 
 .punto.activo::marker {
     color: #6982a3;
@@ -337,8 +338,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 .centrado,
-.carrousel .img, 
-.carrousel .grande, 
+ 
 .formulario {
     box-shadow:
     1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
