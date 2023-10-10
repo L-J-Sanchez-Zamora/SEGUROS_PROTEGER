@@ -78,8 +78,10 @@ a {
     text-align: center;
 }
 
-.titleFooter{
-    font-weight: bold;
+.titleFooter {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #101010 1px 0px 1px;
 }
 hr{
     border-color: #2fdada;
@@ -89,4 +91,10 @@ hr{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #7e97b8 1px 0px 1px;
 }

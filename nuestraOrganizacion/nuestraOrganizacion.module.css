@@ -59,8 +59,6 @@ a[href*="page2.html"] {
 
 title {
     color: hsla(313, 88%, 19%, 0.712);
-
-
 }
 
 button {
@@ -103,8 +101,9 @@ p {
 }
 
 .clicAqui {
-
-    text-decoration-color: hsla(313, 88%, 19%, 0.712);
+    text-decoration-color: hsla(300, 2%, 8%, 0.712);
+    font-weight: bold;
+    text-shadow: #7e97b8 1px 0px 1px;
 }
 
 .navBar{
@@ -158,8 +157,10 @@ a {
     text-align: center;
 }
 
-.titleFooter{
-    font-weight: bold;
+.titleFooter {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #101010 1px 0px 1px;
 }
 hr{
     border-color: #2fdada;
@@ -169,4 +170,10 @@ hr{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #7e97b8 1px 0px 1px;
 }

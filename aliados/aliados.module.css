@@ -11,19 +11,20 @@ body{
 }
 
 .destacado {
-    font-family: Bahnschrift SemiCondensed;
+    font-family: 'Hind Vadodara', sans-serif;
     font-size: 30px;
-    color: rgb(96, 228, 44);
+    color: rgb(74, 68, 76);
+    margin: 3rem;
 }
 
 h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 28px;
-    color: rgb(53, 17, 77);
+    color: rgb(74, 19, 111);
 }
 h2:hover {
     font-family: 'PT Sans', sans-serif;
-    color: rgb(221, 9, 240);
+    color: rgb(135, 33, 144);
 }
 
 h1 {
@@ -134,8 +135,10 @@ a {
     text-align: center;
 }
 
-.titleFooter{
-    font-weight: bold;
+.titleFooter {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #101010 1px 0px 1px;
 }
 hr{
     border-color: #2fdada;
@@ -145,4 +148,14 @@ hr{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #7e97b8 1px 0px 1px;
+}
+img{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }

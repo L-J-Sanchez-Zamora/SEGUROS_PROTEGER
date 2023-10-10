@@ -10,14 +10,25 @@ body {
     padding: 0;
     height: 100vh;
     text-align: center;
+    overflow-x: hidden;
 }
+.title-container {
+    white-space: nowrap;
+}
+
+#titleid {
+    color: rgb(10, 10, 10);
+    text-decoration-style: wavy;
+}
+
+
 
 .blockUnoHome {
     background-color: #0077b6;
 }
 
 .normal {
-    font-family:'Hind Vadodara', sans-serif;;
+    font-family: 'Hind Vadodara', sans-serif;
     font-size: 24px;
 }
 
@@ -30,13 +41,7 @@ body {
 h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 28px;
-    color: rgb(12, 12, 12);
-}
-
-h2:hover {
-    font-family: 'PT Sans', sans-serif;
     color: rgb(90, 30, 129);
-    cursor:col-resize;
 }
 
 h1 {
@@ -45,13 +50,15 @@ h1 {
 }
 
 .institucion {
-    color: #023E8A;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
+    text-shadow: #7e97b8 1px 0px 1px;
 }
 
 a[href*="page2.html"] {
@@ -59,7 +66,8 @@ a[href*="page2.html"] {
 }
 
 #leidyid {
-    color: rgb(90, 30, 129);
+    color: rgb(10, 10, 10);
+
 }
 
 title {
@@ -95,7 +103,7 @@ button {
 button:hover {
     color: #516d91;
     background-color: #E5EDF5;
-    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgba(102, 99, 101, 0.48);
 }
 
 button:active {
@@ -109,7 +117,8 @@ textarea {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 16px;
     border-radius: 18px;
-    width: 50%; /* Ajusta el ancho al 100% */
+    width: 50%;
+    /* Ajusta el ancho al 100% */
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: 4px center;
@@ -136,7 +145,8 @@ textarea:focus {
 }
 
 select {
-    width: 30%; /* Ajusta el ancho al 100% */
+    width: 30%;
+    /* Ajusta el ancho al 100% */
     font-size: 16px;
     background-color: white;
     cursor: pointer;
@@ -150,7 +160,8 @@ select option {
 }
 
 textarea {
-    width: 70%; /* Ajusta el ancho al 100% */
+    width: 70%;
+    /* Ajusta el ancho al 100% */
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 16px;
     height: 100px;
@@ -170,33 +181,28 @@ label {
     text-justify: initial;
 }
 
-.buttonForm{
-display: flex;
-margin: 0 auto;
-width: 150px;
-margin-top: 1rem;
+.buttonForm {
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 1rem;
 }
+
 .p {
     font-family: 'Hind Vadodara', sans-serif;
     font-size: 20px;
 }
+
 .clicAqui {
-    text-decoration-color: hsla(313, 88%, 19%, 0.712);
+    text-decoration-color: hsla(300, 2%, 8%, 0.712);
     font-weight: bold;
+    text-shadow: #7e97b8 1px 0px 1px;
 }
 
 .blockButton {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
-}
+    display: flex;
+    justify-content: space-evenly;
 
-@media (max-width: 1300px) {
-    .blockButton {
-        margin-left: 10%;
-    }
 }
 
 @media (max-width: 900px) {
@@ -227,8 +233,6 @@ a.spaceColumn {
 .logo {
     display: flex;
     align-items: center;
-    width:100px; 
-    align-items:left;
 }
 
 .blockFooter {
@@ -242,33 +246,42 @@ a.spaceColumn {
 }
 
 .titleFooter {
-    font-weight: bold;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    text-shadow: #101010 1px 0px 1px;
 }
 
 hr {
-    border-color: #7e97b8;
+    border-color: #2fdada;
 }
 
 .introFooter {
     font-family: 'Hind Vadodara', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    
+
 }
-.centrado{
+
+.centrado {
     display: flex;
     margin: 0 auto;
     width: 50%;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+    .centrado {
+        height: 30vh;
+    }
 }
 
 /*++++++++++ Estilos para el carrusel +++++++++++++++*/
 .carrousel {
     width: 90%;
     max-width: 120em;
-    padding:0;
-    margin:0 auto
+    padding: 0;
+    margin: 0 auto
 }
 
 .carrousel .grande {
@@ -277,27 +290,24 @@ hr {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0;
+    padding-top: 0.5rem;
     transition: all .5s ease;
     transform: translateX(0%);
     background-color: transparent;
     border-radius: 12px;
 }
 
-.carrousel .img {
-    width: calc(100% / 3 - 2em);
-    height: 70vh;
-    border-radius: 12px;
+.carrousel .img{
+    width: calc(100% / 3 - 6em);
+    height: 60vh;
     padding-top: 0;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
 }
 
 .carrousel .puntos {
-    
     width: 100%;
     margin: 1em 0 0;
-    padding: .4em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -317,34 +327,38 @@ hr {
     width: 2em;
     height: 2em;
 }
-.li{
+
+.li {
     size: 50px;
 }
+
 /*_________________________________________*/
-.center{
+
+.center {
     text-align: center;
 }
-.formulario{
-display: block;
-justify-content: space-between;
- border: 2px solid #ccc;
- border-radius: 35px;
- padding: 2rem;
- margin-left: 20%;
- margin-right: 20%;
+
+.formulario {
+    display: block;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    padding: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 input[type="radio"] {
     margin-right: 10px;
 }
+
 .centrado,
- 
 .formulario {
     box-shadow:
-    1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
-    4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
-    8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
-    14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
-    27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
-    66px 65px 80px rgba(0, 0, 0, 0.11);
+        1.8px 1.8px 2.2px rgba(0, 0, 0, 0.031),
+        4.4px 4.3px 5.3px rgba(0, 0, 0, 0.044),
+        8.3px 8.1px 10px rgba(0, 0, 0, 0.055),
+        14.7px 14.5px 17.9px rgba(0, 0, 0, 0.066),
+        27.6px 27.2px 33.4px rgba(0, 0, 0, 0.079),
+        66px 65px 80px rgba(0, 0, 0, 0.11);
 }
