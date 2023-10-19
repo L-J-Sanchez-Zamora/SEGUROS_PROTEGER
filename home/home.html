@@ -54,7 +54,7 @@
             Cuidamos su bienestar, el de su hogar y su familia
         </h1><br>
 
-        <h2>Nuestros servicios</h2>
+        <h2 id="header1">Nuestros servicios</h2>
 
         <div class="blockButton">
             <a href="../hogar/hogar.html" class="spaceColumn">
@@ -181,17 +181,18 @@
                 constantemente a las cambiantes necesidades de sus asegurados y desempeñando un papel fundamental en la
                 protección del patrimonio de las familias y empresas colombianas.<br><span class="institucion">Nos
                     complace el que puedas contar con nosotros por mas 40 años</span>.<br><br>
-                
+
                 <h2> Nuestro equipo de trabajo</h2><br>
-                <img src="../imagenes/familia_aseguradora.jpg"
-                    alt="Foto Leidy Johanna Sánchez Zamora y su familia" class="centrado">
+                <img src="../imagenes/familia_aseguradora.jpg" alt="Foto Leidy Johanna Sánchez Zamora y su familia"
+                    class="centrado">
                 <br>
                 <br class="normal">
-                    Nuestro equipo profesional, conformado por más de 500 empleados altamente capacitados y
-                    comprometidos, es el motor impulsor detrás de nuestros éxitos y logros. Cada miembro de nuestro
-                    equipo aporta una amplia gama de habilidades y experiencia, lo que nos permite abordar desafíos
-                    complejos y ofrecer soluciones innovadoras a nuestros clientes a nivel nacional.<br>
-                    Para visualizar las empresas colaboradoras <a href="../aliados/aliados.html" class="clicAqui"> haz clic aquí. </a></p>
+                Nuestro equipo profesional, conformado por más de 500 empleados altamente capacitados y
+                comprometidos, es el motor impulsor detrás de nuestros éxitos y logros. Cada miembro de nuestro
+                equipo aporta una amplia gama de habilidades y experiencia, lo que nos permite abordar desafíos
+                complejos y ofrecer soluciones innovadoras a nuestros clientes a nivel nacional.<br>
+                Para visualizar las empresas colaboradoras <a href="../aliados/aliados.html" class="clicAqui"> haz clic
+                    aquí. </a></p>
                 <br>
                 <img src="../imagenes/hogar.png" alt="Foto hogar" class="centrado">
                 <br>
@@ -206,7 +207,7 @@
                     y
                     la innovación en beneficio de nuestros clientes. </p><br>
 
-                
+
                 <img src="../imagenes/mascotas.jpg" alt="Foto mascota" class="centrado">
                 <br>
                 <h2>Nuestra presencia</h2>
@@ -218,14 +219,38 @@
                     esenciales. Su dedicación y profesionalismo son fundamentales para nuestra capacidad de atender
                     a nuestros clientes en cualquier lugar y en cualquier momento, asegurando que siempre estén en
                     buenas manos, sin importar dónde se encuentren en nuestro hermoso país.</p><br>
-                <img src="../imagenes/ideal.jpg" alt="Foto ideal" class="centrado" ><br><br>
+
+
+
+                <img id="image" src="../imagenes/ideal.jpg" alt="Foto ideal" class="centrado"><br><br>
+
+                <!-- <p id="text">Copiame</p> 
+                <div>
+                    <input id="input" type="text" placeholder="Modificame">
+                    <p id="input"> Este texto se va ha modificar</p>
+                </div>
+                -->
+
+                <div id="header" class="pulse">
+                    <div class="rocket">
+                        <img src="../imagenes/llama.png" alt="24horas">
+                    </div>
+                </div>
+
+                <!-- <div id="container">
+                    <button id="submit">Presionar</button>
+                    <div id="review" class="done">Contenido</div>
+                </div> -->
 
                 <div class="formulario">
                     <form>
                         <h1 id="contactanos">Contactanos</h1>
-                        <label for="fullName" class="izq"></label><input type="text"  placeholder="Nombres y apellidos"  class="inputForm"></input><br><br>
-                        <label for="email" class="izq"></label><input type="text" placeholder="Correo electronico" class="inputForm"></input><br><br>
-                        <label for="phoneNumber" class="izq"></label><input type="text" placeholder="Celular" class="inputForm"></input><br><br>
+                        <label for="fullName" class="izq"></label><input type="text" placeholder="Nombres y apellidos"
+                            class="inputForm"></input><br><br>
+                        <label for="email" class="izq"></label><input type="text" placeholder="Correo electronico"
+                            class="inputForm"></input><br><br>
+                        <label for="phoneNumber" class="izq"></label><input type="text" placeholder="Celular"
+                            class="inputForm"></input><br><br>
                         <select name="city" id="city" class="inputForm">
                             <option value="city" disabled="disabled" selected>Ciudad</option>
                             <option value="Arauca">Arauca</option>
@@ -264,11 +289,15 @@
                         <label for="opinion">Comentanos tu opinión acerca de nuestros servicios: </label><br><br>
                         <textarea></textarea><br><br>
                         <label>Seleccione el servicio que más llamo su atención:</label><br><br>
-                        <label for="option1"><input type="radio" name="role" value="hogar" id="option1">Seguro Hogar</label><br>
-                        <label for="option2"><input type="radio" name="role" value="vehiculos" id="option2">Seguro Vehiculos</label><br>
-                        <label for="option3"><input type="radio" name="role" value="mascotas" id="option3">Seguro Mascotas</label><br>
-                        <label for="option4"><input type="radio" name="role" value="asistencias" id="option4">Asistencias</label><br><br>
-                        
+                        <label for="option1"><input type="radio" name="role" value="hogar" id="option1">Seguro
+                            Hogar</label><br>
+                        <label for="option2"><input type="radio" name="role" value="vehiculos" id="option2">Seguro
+                            Vehiculos</label><br>
+                        <label for="option3"><input type="radio" name="role" value="mascotas" id="option3">Seguro
+                            Mascotas</label><br>
+                        <label for="option4"><input type="radio" name="role" value="asistencias"
+                                id="option4">Asistencias</label><br><br>
+
                         <label>¿Qué vehiculo tienes?</label><br>
                         <input type="checkbox" id="bicicleta" name="bicicleta" value="bicicleta">
                         <label for="vehicle1"> Bicicleta</label><br>
@@ -278,8 +307,8 @@
                         <label for="vehicle3"> Motocicleta</label><br>
                         <input type="checkbox" id="ninguno" name="ninguno" value="ninguno">
                         <label for="vehicle4"> Ninguno</label><br><br>
+                        <button id="button-text" class="buttonForm">Enviar</button><br>
 
-                        <button class="buttonForm">Enviar</button><br>
                     </form>
                 </div>
                 <br><br><br>
@@ -297,7 +326,7 @@
                     <div>
                         <a class="titleFooter">Acerca de nosotros</a><br>
                         <a href="../nuestraOrganizacion/nuestraOrganizacion.html">Nuestra empresa<a><br>
-                                <a href="../aliados/aliados.html">Nuestros aliados<a><br>                             
+                                <a href="../aliados/aliados.html">Nuestros aliados<a><br>
                                         <a href="#contactanos">Contactanos</a><br><br>
                     </div>
                     <div>
